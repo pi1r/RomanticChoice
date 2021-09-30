@@ -1,16 +1,37 @@
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-getRandomInt(3);     // generates a random number from 0 to 2 , but  u can do more... 
+var first = "Come on... Take her out on a date freak!";
+var second = "You can only communicate with your computer. Do not even dream";
+var third = "Firstly, look at the mirror.Maybe u need more beautiful girl? ^^";
+// добавили переменные
 
+const variant = [first, second, third] 
+// поместили их в массив 
 
+const prompt = require('prompt-sync')();
  
-if (getRandomInt(3) == 0){
-    console.log("Come on... Take her out on a date freak!");
+const question1 = prompt('do you communicate a lot? (enter yes or no)');
+
+if (question1 == "yes"){
+    variant.push(first);
 }
-else if (getRandomInt(3) == 1){
-    console.log("You can only communicate with your computer. Do not even dream");
+else if (question1 == "no"){
+    variant.push(second)
 }
-else {
-    console.log("Firstly, look at the mirror.Maybe u need more beautiful girl? ^^");
+else{
+    alert("freak"); 
 }
+
+const question2 = prompt('do you often go out together?');
+
+
+if (question2 == "yes"){
+    variant.push(first);
+}
+else if (question2 == "no"){
+    variant.push(second)
+}
+else{
+    console.log("STOP!"); 
+}
+const random = Math.floor(Math.random()* variant.length);
+console.log(variant[random],);
+
