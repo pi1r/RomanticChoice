@@ -1,0 +1,28 @@
+{
+  "name": "love_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate.js",
+  "scripts": {
+    "start": "node ./generate.js",
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pi1r/RomanticChoice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pi1r/RomanticChoice/issues"
+  },
+  "homepage": "https://github.com/pi1r/RomanticChoice#readme",
+  "dependencies": {
+    "prompt": "^1.2.0",
+    "prompt-sync": "^4.2.0",
+    "promt": "0.0.0"
+  }
+}
